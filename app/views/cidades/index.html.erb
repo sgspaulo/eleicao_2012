@@ -1,0 +1,13 @@
+<p>
+    <%= link_to "Voltar", root_path %>
+</p><br />
+
+<table border=1>
+    <% @csv_linhas.each do |row| %>
+        <tr>
+            <% row.each do |campo| %>
+                <td><%= campo %></td>
+            <% end %>
+        </tr>
+    <% end %>
+</table>
