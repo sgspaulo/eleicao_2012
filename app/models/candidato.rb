@@ -3,6 +3,14 @@ class Candidato < ActiveRecord::Base
   				  :partido_id, :profissao_id, :data_nascimento, :titulo_eleitoral, :sexo_id, :grau_estudo_id, 
   				  :estado_civil_id, :nacionalidade_id, :naturalidade_id, :gasto_maximo
 
-  # belongs_to :cidade, :cargo, :situacao, :partido, :profissao, :sexo, :grau_estudo, :estado_civil, 
-  # 			 :nacionalidade, :naturalidade
+  belongs_to :cargo
+  belongs_to :cidade
+  belongs_to :situacao
+  belongs_to :partido
+  belongs_to :profissao
+  belongs_to :sexo
+  belongs_to :grau_estudo
+  belongs_to :estado_civil
+  belongs_to :nacionalidade
+  belongs_to :naturalidade 
 end

@@ -219,3 +219,4 @@ class CidadesController < ApplicationController
         @model = Import.find(params[:id]) if params[:id]
     end
 end
+	
