@@ -107,7 +107,7 @@ ActiveRecord::Schema.define(:version => 20121005183901) do
     t.datetime "updated_at", :null => false
   end
 
-  add_index "partidos", ["codigo", "sequencial"], :name => "index_partidos_on_codigo_and_sequencial", :unique => true
+  add_index "partidos", ["sigla", "sequencial"], :name => "index_partidos_on_sigla_and_sequencial", :unique => true
 
   create_table "profissoes", :force => true do |t|
     t.integer  "codigo"
