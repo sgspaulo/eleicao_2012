@@ -10,7 +10,9 @@
 
     <table>
         <tr>
-            <td><%= link_to "Prefeito", prefeitos_path %></td>
+            <td><%= link_to "Prefeito", url_for( :action => "candidatos", :nome => "prefeito" ) %></td>
+            <td><%= link_to "Vereador", url_for( :action => "candidatos", :nome => "vereador" ) %></td>
+            <td><%= link_to "Home", root_path %></td>
         </tr>
     </table>
 

@@ -11,9 +11,11 @@ Eleicao2012c::Application.routes.draw do
   get "nacionalidades" => "importacoes#importar_nacionalidades"
   get "estados" => "importacoes#importar_estados"
   get "situacoes" => "importacoes#importar_situacoes"
-  get "candidatos" => "importacoes#importar_candidatos"
+  get "candidatos_import" => "importacoes#importar_candidatos"
   get "sexos" => "importacoes#importar_sexos"
   get "nada_a_importar" => "importacoes#nada_a_importar"
-  get "prefeitos" => "dashboard#prefeitos"
+  # get "prefeitos" => "dashboard#prefeitos"
+  # get "vereadores" => "dashboard#vereadores"
+  get "candidatos/:nome" => "dashboard#candidatos"
 
 end
